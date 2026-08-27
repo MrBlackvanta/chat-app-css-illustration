@@ -50,7 +50,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: "device-width",
   initialScale: 1,
-  themeColor: "#ffffff",
+  themeColor: "#fafafa",
 };
 
 export default function RootLayout({
@@ -60,7 +60,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${rubik.variable} antialiased`}>
-      <body className="flex min-h-dvh flex-col">{children}</body>
+      <body>
+        <div className="flex min-h-dvh flex-col overflow-clip">{children}</div>
+      </body>
     </html>
   );
 }
