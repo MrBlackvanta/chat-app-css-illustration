@@ -1,5 +1,7 @@
 import avatar from "@/assets/avatar.webp";
 
+import { speakers } from "./speakers";
+
 export default function ChatHeader() {
   return (
     <header className="flex items-center gap-2 rounded-b-band v-brand-band px-4 pt-7.5 pb-3">
@@ -12,7 +14,7 @@ export default function ChatHeader() {
         className="size-6 rounded-full border border-white"
       />
       <div className="mr-auto">
-        <p className="text-name font-medium text-white">Samuel Green</p>
+        <p className="text-name font-medium text-white">{speakers.walker}</p>
         <p className="mt-0.5 text-status text-presence">Available to Walk</p>
       </div>
       <span className="flex flex-col gap-px">

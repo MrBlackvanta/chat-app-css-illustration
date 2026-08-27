@@ -38,6 +38,7 @@
   --radius-band: 6px;
 
   --shadow-phone: 0 30px 56px -10px rgb(62 39 83 / 0.25);
+  --shadow-raised: 0 9px 4px -4px rgb(62 39 83 / 0.05);
 }
 
 @theme inline {
@@ -62,6 +63,18 @@
 @utility v-focus-ring {
   &:focus-visible {
     @apply outline-2 outline-offset-4 outline-ink;
+  }
+}
+
+@utility v-bubble {
+  @apply max-w-32 rounded-bubble px-2 py-1.5 text-chat;
+
+  [data-from="walker"] & {
+    @apply rounded-bl-tail bg-bubble text-chat-in;
+  }
+
+  [data-from="owner"] & {
+    @apply rounded-br-tail bg-white text-chat-out shadow-raised;
   }
 }
 
