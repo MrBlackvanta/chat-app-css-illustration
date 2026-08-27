@@ -4,7 +4,7 @@ import { speakers } from "./speakers";
 
 export default function ChatHeader() {
   return (
-    <header className="flex items-center gap-2 rounded-b-band v-brand-band px-4 pt-7.5 pb-3">
+    <header className="flex items-center gap-2 rounded-b-band v-brand-band px-4 pt-7.5 pb-3 shadow-band">
       <span className="h-2.5 w-1 bg-white v-chevron" />
       <img
         src={avatar.src}

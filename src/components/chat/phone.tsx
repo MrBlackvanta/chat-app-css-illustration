@@ -1,5 +1,6 @@
 import ChatHeader from "./chat-header";
 import ChatLog from "./chat-log";
+import MessageInput from "./message-input";
 
 export default function Phone() {
   return (
@@ -11,6 +12,7 @@ export default function Phone() {
         <ChatHeader />
         <div className="mx-auto flex w-53.25 flex-1 flex-col gap-4 pt-2.75 pb-2.5">
           <ChatLog />
+          <MessageInput />
         </div>
       </div>
       <div className="absolute inset-x-0 top-0 mx-auto h-7.25 w-32.25 rounded-b-notch bg-white" />

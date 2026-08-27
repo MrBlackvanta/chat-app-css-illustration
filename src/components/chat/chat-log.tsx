@@ -5,9 +5,11 @@ import WalkOption from "./walk-option";
 
 export default function ChatLog() {
   return (
-    <ol className="flex flex-col gap-4">
+    <ol className="flex v-arrival flex-col gap-4">
       <ChatTurn from="walker">
-        <ChatBubble>That sounds great. I’d be happy with that.</ChatBubble>
+        <ChatBubble>
+          That sounds great. I’d be happy to discuss more.
+        </ChatBubble>
         <ChatBubble>
           Could you send over some pictures of your dog, please?
         </ChatBubble>
