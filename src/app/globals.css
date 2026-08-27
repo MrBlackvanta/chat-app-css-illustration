@@ -1,13 +1,52 @@
 @import "tailwindcss";
 @source not "../../*.md";
 
+@theme {
+  --color-page: #fafafa;
+  --color-ink: #3e2753;
+  --color-muted: #746c7b;
+  --color-app: #f5f3f7;
+  --color-bubble: #eee5f4;
+  --color-chat-in: #923fc8;
+  --color-chat-out: #6e5d7e;
+  --color-presence: #d99eff;
+  --color-placeholder: #6e777d;
+  --color-radio: #e472ff;
+  --color-magenta: #e844ff;
+  --color-violet: #8739ff;
+
+  --text-heading: 2.5rem;
+  --text-heading--line-height: 2.9375rem;
+  --text-body: 1rem;
+  --text-body--line-height: 1.75rem;
+  --text-price: 0.75rem;
+  --text-price--line-height: 0.6875rem;
+  --text-name: 0.6875rem;
+  --text-name--line-height: 0.8125rem;
+  --text-input: 0.5625rem;
+  --text-input--line-height: 0.6875rem;
+  --text-chat: 0.5rem;
+  --text-chat--line-height: 0.6875rem;
+  --text-status: 0.5rem;
+  --text-status--line-height: 0.5625rem;
+
+  --radius-phone: 30px;
+  --radius-screen: 20px;
+  --radius-notch: 14px;
+  --radius-bubble: 10px;
+  --radius-tail: 4px;
+  --radius-band: 6px;
+
+  --shadow-phone: 0 30px 56px -10px rgb(62 39 83 / 0.25);
+}
+
 @theme inline {
   --font-sans: var(--font-rubik);
 }
 
 @layer base {
   body {
-    @apply font-sans;
+    @apply bg-page font-sans;
   }
 
   a,
@@ -22,6 +61,30 @@
 
 @utility v-focus-ring {
   &:focus-visible {
-    @apply outline-2 outline-offset-4 outline-current;
+    @apply outline-2 outline-offset-4 outline-ink;
   }
+}
+
+@utility v-brand-blob {
+  background-image: linear-gradient(
+    207deg,
+    var(--color-magenta),
+    var(--color-violet)
+  );
+}
+
+@utility v-brand-band {
+  background-image: linear-gradient(
+    254deg,
+    var(--color-magenta),
+    var(--color-violet)
+  );
+}
+
+@utility v-brand-option {
+  background-image: linear-gradient(
+    101deg,
+    var(--color-magenta),
+    var(--color-violet)
+  );
 }
