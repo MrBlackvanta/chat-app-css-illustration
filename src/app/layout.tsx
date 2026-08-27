@@ -13,10 +13,10 @@ const rubik = Rubik({
 const SITE_URL =
   "https://chat-app-css-illustration.abdelrhman-ahmed8881.workers.dev";
 
-const name = "Chat App CSS Illustration";
-const title = `${name} | Simple booking`;
+const name = "Simple booking";
+const title = `${name} | Dog walking by chat`;
 const description =
-  "A dog-walking chat interface drawn entirely in HTML and CSS: message bubbles, shared photos and walk options, animating in on load.";
+  "Message your dog walker, share photos, and pick a walk length and price. Arrangements, bookings and ratings all happen in the conversation.";
 
 const shareImage = {
   url: "/opengraph-image.jpg",
