@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@source not "../../*.md";
+
+@theme inline {
+  --font-sans: var(--font-rubik);
+}
+
+@layer base {
+  body {
+    @apply font-sans;
+  }
+
+  a,
+  button {
+    @apply v-focus-ring;
+  }
+
+  button:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@utility v-focus-ring {
+  &:focus-visible {
+    @apply outline-2 outline-offset-4 outline-current;
+  }
+}
