@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Rubik } from "next/font/google";
 
+import { SITE_URL } from "@/app/site";
 import "./globals.css";
 
 const rubik = Rubik({
@@ -9,9 +10,6 @@ const rubik = Rubik({
   subsets: ["latin"],
   display: "swap",
 });
-
-const SITE_URL =
-  "https://chat-app-css-illustration.abdelrhman-ahmed8881.workers.dev";
 
 const name = "Simple booking";
 const title = `${name} | Dog walking by chat`;
